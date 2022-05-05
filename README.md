@@ -18,3 +18,8 @@ Frontend do projeto integrador
 4. Construção da Página com a rota flask / jinja 2
         * Ex.: código na pasta login_page_with_flask/
 6. Envio da página estática para o repositório no Github 
+
+## Comandos
+```
+$ git clone https://github.com/ProjetoIntegrador2021-2/frontend.git
+```
