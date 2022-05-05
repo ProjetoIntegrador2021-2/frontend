@@ -1,6 +1,9 @@
 # frontend
 Frontend do projeto integrador
 
+## Mockups no Figma
+* (Atualizar os links)
+
 ## Protótipos Navegáveis (Páginas Estáticas - Sandbox)
 * Página Inicial: https://codesandbox.io/s/tela-inicial-rplxop
 * Tela de Login: https://codesandbox.io/s/login-c4dnf0
