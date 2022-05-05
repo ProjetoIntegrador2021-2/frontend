@@ -33,6 +33,9 @@ $ git status (ver as alterações)
 $ git add .
 
 $ git commit -m "refatoracao de nome das pastas"
+$ git pull (boa prática / pode ocorrer necessidade de merge)
+$ git push
+
 
 
 
