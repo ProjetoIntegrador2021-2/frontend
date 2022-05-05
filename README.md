@@ -21,5 +21,19 @@ Frontend do projeto integrador
 
 ## Comandos
 ```
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+```
+
+```
 $ git clone https://github.com/ProjetoIntegrador2021-2/frontend.git
+$ cd frontend/
+$ git checkout telalogin2
+$ git status (ver as alterações)
+$ git add .
+
+$ git commit -m "refatoracao de nome das pastas"
+
+
+
 ```
