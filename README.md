@@ -4,7 +4,7 @@ Frontend do projeto integrador
 # Mockups no Figma
 * Tela inicial: https://www.figma.com/file/2j5h9LeCqwzFMYUF3QFs6R/TELA-INICIAL
 * Tela de Login: https://www.figma.com/file/PeI2zjMhSWop5k1PDZ2VZT/Tela-de-login
-* Cadastro resteurante/entregador: https://www.figma.com/file/VyTns0idLYmMCfV6DB84zs/CADASTRO-RESTURANTE-E-ENTREGADOR
+* Cadastro restaurante/entregador: https://www.figma.com/file/VyTns0idLYmMCfV6DB84zs/CADASTRO-RESTURANTE-E-ENTREGADOR
 
 # Protótipos Navegáveis (Páginas Estáticas - Sandbox)
 
