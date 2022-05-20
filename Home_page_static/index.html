@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="pt_br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="categorias.css">
+    <link rel="stylesheet" href="maispedidos.scss">
+    <link rel="stylesheet" href="recomendados.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: #ea4335;"
+    >
+      <div class="container-fluid my-2">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" style="margin-left: 5%;" href="#">
+          <img src="" alt="Logo" />
+        </a>
+        <div
+          class="collapse navbar-collapse justify-content-end m-2"
+          id="navbarTogglerDemo03"
+        >
+          <a
+            class="navbar-brand my-2 "
+            style="margin-right: 5%; font-size: 18px;"
+            href=""
+            >Trabalhe conosco</a
+          >
+          <form class="d-flex" style="margin-right: 5%;">
+            <button id="botao"
+              class="btn btn-light"
+              style="width: 100px; right: 50px;"
+              type="submit"
+            >
+              <span  style="color: #ea4335; font-weight: 600;"> Entrar </span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav> 
+
+
+        <!-- categorias -->
+
+      <div class="container">
+        <h3 class="fw-bold mb-5 mt-5" style="font-size: 20px;">
+          Categorias
+        </h3>
+        <div class="row">
+          <div class="col-12 mx-2 ">
+            <div class="owl-carousel owl-theme">
+              <div class="item mb-4" style="width: 7em;">
+                <div class="card border-0 shadow ">
+                  <img src="..." alt="" class="" />
+                  <div class="card-body rounded-3 py-2 px-3" style="background-color:#ffffff;">
+                    <img src="burger.svg" style="width: 90%; margin: auto;" alt="" class="boxanimation" />
+                  </div>
+                </div>
+                <div class="card-title text-center mt-3">
+                  <h4 class="category">
+                    Lanches
+                  </h4>
+                </div>
+              </div>
+  
+              <div class="item mb-4" style="width: 7em;">
+                <div class="card border-0 shadow">
+                  <img src="..." alt="" class="card-img-top" />
+                  <div class="card-body rounded-3 py-2 px-3" style="background-color:#ffffff;">
+                    <img src="promo.svg" style="width: 90%; margin: auto;" alt="" class="" />
+                  </div>
+                </div>
+                <div class="card-title text-center mt-3">
+                  <h4 class="category">
+                  Promoções
+                  </h4>
+                </div>
+              </div>
+              <div class="item mb-4" style="width: 7em;">
+                <div class="card border-0 shadow">
+                  <img src="1.jpg" alt="" class="card-img-top" />
+                  <div class="card-body rounded-3 py-2 px-3" style="background-color:#ffffff;">
+                    <img src="bebida.svg" style="width: 90%; margin: auto;" alt="" class="" />
+                  </div>
+                </div>
+                <div class="card-title text-center mt-3">
+                  <h4 class="category">
+                    Bebidas
+                  </h4>
+                </div>
+              </div>
+              <div class="item mb-4" style="width: 7em;">
+                <div class="card border-0 shadow">
+                  <img src="1.jpg" alt="" class="card-img-top" />
+                  
+                  <div class="card-body rounded-3 py-2 px-3" style="background-color:#ffffff;">
+                    <img src="sorvete.svg"  style="width: 90%; margin: auto;" alt="" class="" />
+                  </div>
+                </div>
+                <div class="card-title text-center mt-3">
+                  <h4 class="category">
+                    Doces
+                  </h4>
+                </div>
+              </div>
+              <div class="item mb-4" style="width: 7em;">
+                <div class="card border-0 shadow">
+                  <img src="1.jpg" alt="" class="card-img-top" />
+                  <div class="card-body rounded-3 py-2 px-3" style="background-color:#ffffff;">
+                    <img src="sushi.svg" style="width: 90%; margin: auto;" alt="" class="" />
+                  </div>
+                </div>
+                <div class="card-title text-center mt-3">
+                  <h4 class="category">
+                    Japonesa
+                  </h4>
+                </div>
+              </div>
+              <div class="item mb-4" style="width: 7em;">
+                <div class="card border-0 shadow">
+                  <img src="1.jpg" alt="" class="card-img-top" />
+                  <div class="card-body rounded-3 py-2 px-3" style="background-color:#ffffff;">
+                    <img src="pizza.svg" style="width: 90%; margin: auto;" alt="" class="" />
+                  </div>
+                </div>
+                <div class="card-title text-center mt-3">
+                  <h4 class="category">
+                    Pizza
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+          <!-- mais pedidos -->
+
+      <h3 class=" container fw-bold mb-4 mt-5" style="font-size: 20px; ">
+        Mais pedidos
+      </h3>
+      <div class="maispedidos container text-center align-items-center">
+      <div class="ui-card me-3">
+        <img src="https://images.unsplash.com/photo-1606149059549-6042addafc5a?ixlib=rb-1.2.1&raw_url=true&q=60&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxNDI0MzQwfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500">
+        <div class="description">
+          <h3>Moun</h3>
+          <p>Lorem ipsum dolor sit.</p>
+        </div>
+      </div>
+      <div class="ui-card me-3">
+        <img src="https://images.unsplash.com/photo-1651978595416-9956a5fb8f7a?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8OHwxNDI0MzQwfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500">
+        <div class="description">
+          <h3>Lorem</h3>
+          <p>Lorem ipsum dolor sit.</p>
+        </div>
+      </div>
+      <div class="ui-card">
+        <img src="https://images.unsplash.com/photo-1611309454921-16cef3438ee0?ixlib=rb-1.2.1&raw_url=true&q=60&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3wxNDI0MzQwfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500">
+        <div class="description">
+          <h3>Lorem</h3>
+          <p>Lorem ipsum dolor sit.</p>
+        </div>
+      </div>
+    </div>
+      
+          <!-- recomendados -->
+      <main class="recomendados"> 
+        <h3 class="container fw-bold mb-4 mt-5" style="font-size: 20px;">
+          Recomendados
+        </h3>
+        <div class="container bg-trasparent mb-5 my-4 p-3" style="position: relative;"> 
+          <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3 "> 
+            <div class="col"> 
+              <div class="cardre h-100 shadow-sm"> 
+                <img src="https://www.mapadacachaca.com.br/wp-content/uploads/2021/01/massa-de-pizza-com-cachaca.jpg" class="card-img-top" alt="..."> 
+                <div class="card-body"> 
+                  <div class="clearfix mb-3"> 
+                    <span class="float-start badge rounded-pill bg-warning">5.0
+                      <span class="mr-3 fa fa-star"> </span> 
+                    </span>
+                    <span class="float-end price-hp">24,00 R$</span> 
+                  </div> 
+                  <h5 class="card-title">Lorem, ipsum . </h5> 
+                 
+                </div> 
+              </div> 
+            </div>
+            <div class="col"> 
+              <div class="cardre h-100 shadow-sm"> 
+                <img src="https://classic.exame.com/wp-content/uploads/2020/05/mafe-studio-LV2p9Utbkbw-unsplash-1.jpg?quality=70&strip=info&w=1024" class="card-img-top" alt="..."> 
+                <div class="card-body"> 
+                  <div class="clearfix mb-3"> 
+                    <span class="float-start badge rounded-pill bg-warning">4.8
+                      <span class="mr-3 fa fa-star"> </span>
+                    </span> 
+                    <span class="float-end price-hp">20,00 R$</span> 
+                  </div> 
+                  <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5> 
+                  
+                </div> 
+              </div> 
+            </div>
+            <div class="col"> 
+              <div class="cardre h-100 shadow-sm"> 
+                <img src="https://lovelytab.com/wp-content/uploads/2019/08/Sushi-Wallpapers-1024x640.jpg" class="card-img-top" alt="..."> 
+                <div class="card-body"> 
+                  <div class="clearfix mb-3"> 
+                    <span class="float-start badge rounded-pill bg-warning">4.5
+                      <span class="mr-3 fa fa-star"> </span> 
+                    </span> 
+                    <span class="float-end price-hp">30,00 R$</span> 
+                  </div> 
+                  <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur </h5> 
+                  
+                </div> 
+              </div> 
+            </div>
+            <div class="col"> 
+              <div class="cardre h-100 shadow-sm"> 
+                <img src="https://www.tecnonutrireceitas.com.br/central/Content/handlers/Receita.ashx?id=2940&tipo=r&default=s" class="card-img-top" alt="..."> 
+                <div class="card-body"> 
+                  <div class="clearfix mb-3"> 
+                    <span class="float-start badge rounded-pill bg-warning">4.5
+                      <span class="mr-3 fa fa-star"> </span> 
+
+                    </span> 
+                    <span class="float-end price-hp">28,00 R$</span> 
+                  </div> 
+                  <h5 class="card-title">Lorem, ipsum dolor sit amet.</h5> 
+                 
+                </div> 
+              </div> 
+            </div>
+          </div>
+        </div>     
+      </main>
+
+      <br><br><br><br><br><br><br>
+
+                <!-- rodape -->
+
+      <section id="footer">
+        <div class="container  ">
+          <div class="row text-center text-xs-center text-sm-left text-md-left mb-2">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+              <ul class="list-unstyled quick-links">
+                <li><a href="#"><i class="fa fa-angle-double-right"></i>Home</a></li>
+      
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+              <ul class="list-unstyled quick-links">
+                <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Contato</a></li>
+               
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+              <ul class="list-unstyled quick-links">
+                <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Sobre nós</a></li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+              <ul class="list-unstyled list-inline social text-center">
+                <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02" target="_blank"><i class="fa fa-envelope"></i></a></li>
+              </ul>
+            </div>
+            <hr style="color: white;">
+          </div>	
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+              <p><u><a href="https://www.nationaltransaction.com/">Lorem ipsum dolor .</a></u> Consectetur adipisicing elit</p>
+              <p class="h6">© All right Reversed.<a class="text-green ml-2" href="#" target="_blank"> Flash food</a></p>
+            </div>
+            <hr style="color: white;">
+          </div>	
+        </div>
+      </section>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: false,
+        
+        margin: 10,
+        responsive: {
+          200: {
+            items: 1.5
+          },
+
+          300: {
+            items: 2.3
+          },
+
+          400: {
+            items: 3
+          },
+
+          500: {
+            items: 4
+          },
+
+          600: {
+            items: 4.2
+          },
+          800: {
+            items: 5.3
+          },
+          900: {
+            items: 5.5
+          },
+          1000: {
+            items: 6.5
+          },
+          1200: {
+            items: 7
+          },
+          1300: {
+            items: 7
+          },
+          1400: {
+            items: 8
+          }
+        }
+      });
+    </script>
+    <script src="/categorias.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+
+        const panels = document.querySelectorAll('.panel');
+        
+        panels.forEach(panel => panel.addEventListener('click',()=>{
+            removeActiveClasses()
+            panel.classList.add('active');
+        }))
+        
+        function removeActiveClasses(){
+            panels.forEach(panel => panel.classList.remove('active'))
+        }
+        
+        
+        </script>
+  
+  </body>
+</html>
