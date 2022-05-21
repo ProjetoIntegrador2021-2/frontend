@@ -3,20 +3,22 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+
 body {
-  background: #ea4335;
+  background: #000000;
   background-color: #f7f6ff;
 }
 
 .card-img-left {
   width: 45%;
-  background: scroll center url("/assets/img/ilustration4.png");
-  background-size: 140%;
+  background: scroll center url("/assets/img/ilustration5.png");
+  background-size: 30rem;
   background-repeat: no-repeat;
   background-color: #ea4335;
 }
 
 .card {
+  background-image: url();
 }
 
 .btn-login {
@@ -42,11 +44,4 @@ body {
 
 .txtbox {
   color: #a2a2a2;
-}
-
-.form-control {
-  width: 47px;
-  margin: auto;
-  margin-top: 30px;
-  align-items: center;
 }
