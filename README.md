@@ -2,6 +2,7 @@
 Frontend do projeto integrador
 
 # Mockups no Figma
+* https://xd.adobe.com/view/b5101000-112b-4325-84e4-5970668db4c8-e043/
 * Telas protótipo figma - versão 1: https://www.figma.com/file/69zQiQ0GQeqy7fpVCMJgtF/Telas-mobile.1
 * Telas protótipo figma - versão 2: https://www.figma.com/file/cZhD1LQLuMsRTHUmZqELu0/Telas-mobile.2
 
