@@ -3,10 +3,9 @@ Frontend do projeto integrador
 
 # Mockups no Figma
 * Telas protótipo fima - versão 3: https://www.figma.com/file/GZTXlxQB1Xq38dppQAW7ty/TELAS-MOBILE-(FlashFood)?node-id=0%3A1
+* Telas protótipo figma - versão 2: https://www.figma.com/file/cZhD1LQLuMsRTHUmZqELu0/Telas-mobile.2
 * Telas protótipo figma - versão 1: https://www.figma.com/file/69zQiQ0GQeqy7fpVCMJgtF/Telas-mobile.1
 * Telas protótipos XD Adobe- Versão 0: https://xd.adobe.com/view/b5101000-112b-4325-84e4-5970668db4c8-e043/
-* Telas protótipo figma - versão 1: https://www.figma.com/file/69zQiQ0GQeqy7fpVCMJgtF/Telas-mobile.1
-* Telas protótipo figma - versão 2: https://www.figma.com/file/cZhD1LQLuMsRTHUmZqELu0/Telas-mobile.2
 
 # Protótipos Navegáveis (Páginas Estáticas - Sandbox)
 
