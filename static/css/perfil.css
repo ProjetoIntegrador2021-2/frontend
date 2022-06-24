@@ -1,0 +1,23 @@
+.xlx{
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+
+#banneruser {
+    max-width:100%;
+    background-image: url("https://cdn5.vectorstock.com/i/1000x1000/70/54/different-food-doodles-seamless-background-lineart-vector-10297054.jpg");
+    height: 12rem;
+    background-color:  #b1b1b1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+
+
+.spec-1{color: #938787;
+    font-size: 15px}
+
+.para{
+    font-size: 16px}
+

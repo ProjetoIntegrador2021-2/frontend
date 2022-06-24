@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/cadastro_restaurante.css') }}">
+
+    <title>Registrar restaurante</title>
+  </head>
+  <body>
+    <body>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-xl-9 mx-auto">
+            <div
+              class="card flex-row my-5 border-0 shadow rounded-3 overflow-hidden"
+            >
+
+              <div class="card-body p-4 p-sm-5">
+                <a  href="#" type="button" class="btn-close" aria-label="Close"></a>
+
+                <h2 class="card-title text-center mb-5 fs-4 mt-2  fw-bolder">
+                  Cadastro
+                </h2>
+
+
+                <form method="post">
+                  <!-- Adicionar nome do restaurante -->
+                  <h4 class="mt-5 fs-6 container text-center ">
+                    Dados do restaurante
+                  </h4>
+                  <div class="form-floating mt-4 mb-3 mx-5">
+                    <input
+                      name="nome_restaurante"
+                      type="text"
+                      class="form-control"
+                      id="floatingInputUsername"
+                      placeholder="Nome do restaurante"
+                      required
+                      autofocus
+                    />
+                    <label class="txtbox" for="floatingInputUsername">Nome</label>
+                  </div>
+
+                  <!-- Adicionar endereço -->
+                  <div class="form-floating mb-3  mx-5">
+                    <input
+                      name="endereco_restaurante"
+                      type="text"
+                      class="form-control"
+                      id="floatingInputUsername"
+                      placeholder="Endereço do restaurante"
+                      required
+                      autofocus
+                    />
+                    <label class="txtbox" for="floatingInputAddress">Endereço</label>
+                  </div>
+
+                 <!-- Adicionar CNPJ -->
+                 <div class="form-floating mb-4  mx-5">
+                  <input
+                    name="cnpj_restaurante"
+                    type="number"
+                    class="form-control"
+                    id="floatingnumber"
+                    placeholder="CNPJ"
+                  />
+                  <label class="txtbox" for="floatingnumber">CNPJ</label>
+                </div>
+
+                 <!-- Adicionar Horário de funcionamento -->
+                 <h4 class=" fs-6 container text-center" >
+                  Horário de funcionamento
+                </h4>
+                 <div class="form-floating mt-4  mb-3  mx-5">
+                  <input
+                    name="horario1_restaurante"
+                    type="time"
+                    class="form-control"
+                    id="floatingnumber"
+                    placeholder="Horário"
+                  />
+                  <label class="txtbox" for="floatingnumber">Aberto ás</label>
+                </div>
+
+                <div class="form-floating mb-4  mx-5">
+                  <input
+                    name="horario2_restaurante"
+                    type="time"
+                    class="form-control"
+                    id="floatingnumber"
+                    placeholder="Horário"
+                  />
+                  <label class="txtbox" for="floatingnumber">Fechado ás</label>
+                </div>
+
+                   <!-- Adicionar Categoria -->
+
+                   <h4 class=" fs-6 container text-center" >
+                    Categorias
+                  </h4>
+
+                  <div class="alert text-center mx-4" role="alert">
+                    <div class="form-check form-check-inline ">
+                      <input class="form-check-input" name="japonesa" type="checkbox" id="inlineCheckbox1" value="option1">
+                      <label class="form-check-label" for="inlineCheckbox1">Japonesa</label>
+                    </div>
+
+                    <div class="form-check form-check-inline ">
+                      <input class="form-check-input" name="bebidas" type="checkbox" id="inlineCheckbox2" value="option2">
+                      <label class="form-check-label" for="inlineCheckbox2">Bebidas</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" name="lanches" type="checkbox" id="inlineCheckbox3" value="option3">
+                      <label class="form-check-label" for="inlineCheckbox3">Lanches</label>
+                    </div>
+
+                    <div class="form-check form-check-inline ">
+                      <input class="form-check-input" name="carnes" type="checkbox" id="inlineCheckbox4" value="option4">
+                      <label class="form-check-label" for="inlineCheckbox4">Carnes</label>
+                    </div>
+
+                    <div class="form-check form-check-inline  ">
+                      <input class="form-check-input" name="doces" type="checkbox" id="inlineCheckbox5" value="option5">
+                      <label class="form-check-label" for="inlineCheckbox5">Doces</label>
+                    </div>
+
+                    <div class="form-check form-check-inline ">
+                      <input class="form-check-input" name="pizzas" type="checkbox" id="inlineCheckbox3" value="option6">
+                      <label class="form-check-label" for="inlineCheckbox6">Pizzas</label>
+                    </div>
+                  </div>
+
+
+                  <!-- Botão de cadastrar Restaurante -->
+                  <div class="d-grid mt-4 mb-2 mx-5 ">
+                    <button
+                      class="btn btn-lg btn-danger btn-login fw-bold text-uppercase"
+                      type="submit"
+                    >
+                      Cadastrar
+                    </button>
+                  </div>
+
+                  <a class="d-block text-center mt-3 small" href="#"
+                  >Já sou usuário</a
+                >
+
+                  <hr class="my-4 mx-4" />
+
+
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

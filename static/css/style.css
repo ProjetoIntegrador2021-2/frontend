@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #F7F8F9;
+}
+
+h4 {
+  font-size: 20%;
+}
+
+.btnperfil2 {
+    border-radius: 50%;
+	width: 90px;
+    height: 90px;
+}
+
+.btnperfil {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+  }
+
+.form{
+
+    position: relative;
+}
+
+.form .fa-search{
+
+    position: absolute;
+    top:20px;
+    left: 20px;
+    color: #9ca3af;
+
+}
+
+
+
+.left-pan{
+    padding-left: 7px;
+}
+
+.left-pan i{
+
+   padding-left: 10px;
+}
+
+.form-input{
+
+    height: 55px;
+    text-indent: 33px;
+    border-radius: 10px;
+}
+
+.form-input:focus{
+
+    box-shadow: none;
+    border:none;
+}
+
+#bannerimage {
+	width: 100%;
+	background-image: url('https://www.milium.com.br/wp-content/uploads/2020/05/Banner-Blog-Post-Milium-Mai20-07.jpg');
+	height: 16rem;
+	background-color:  #8a8a8a;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+  }
+
+.form{
+
+    position: relative;
+}
+
+.form .fa-search{
+
+    position: absolute;
+    top:20px;
+    left: 20px;
+    color: #9ca3af;
+
+}
+
+
+
+.left-pan{
+    padding-left: 7px;
+}
+
+.left-pan i{
+
+   padding-left: 10px;
+}
+
+.form-input{
+
+    height: 55px;
+    text-indent: 33px;
+    border-radius: 10px;
+}
+
+.form-input:focus{
+
+    box-shadow: none;
+    border:none;
+}
+
+
+.btn-danger{
+	background-color: #ea4335;
+}
+
+.categorias{
+	margin-top: 170px;
+}
+
+.category {
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(70, 69, 69)
+}
+.card {
+  position: relative;
+  top: 0;
+  padding: 10px 30px 10px 30px ;
+  transition: all 0.2s ease-in-out;
+
+}
+.card:hover {
+  top: 4px;
+}
+
+.card3 {
+	position: relative;
+	top: 0;
+	padding: 10px 10px 10px 10px ;
+	transition: all 0.2s ease-in-out;
+
+  }
+  .card3:hover {
+	top: 4px;
+  }
+
+*,*:after,*:before{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.maispedidos{
+	margin:auto;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+}
+
+.img_mpedidos{
+	width: 100%;
+
+}
+.ui-card{
+	width: 350px;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s ease-out;
+	background:radial-gradient(#111 50%, #000 100%);
+}
+
+.ui-card img{
+	transform: scale(1.3);
+	transition: all 0.3s ease-out;
+}
+.ui-card:hover img{
+	transform: scale(1.1) translateY(-20px);
+	opacity: 0.3
+}
+.ui-card .description{
+	position:absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+}
+.ui-card .description h3{
+	font-weight: 700;
+	font-size: 15px;
+	margin: 0 0 20px;
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 0.3s ease-out;
+
+}
+.ui-card .description p{
+	transform: translateY(30px);
+	opacity: 0;
+  	font-size: 15px;
+ 	margin: 0 0 20px;
+
+	transition: all 0.3s ease-out 0.2s;
+}
+.ui-card .description a{
+	color: #fff;
+	background:#ea4335;
+	display: inline-block;
+	padding: 10px 25px;
+	border-radius: 5px;
+	text-decoration: none;
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 0.3s ease-out 0.4s;
+}
+.ui-card .description a:hover{
+	background:#ea4335;
+}
+.ui-card:hover .description h3{
+	opacity: 1;
+	transform: translateY(0px);
+}
+.ui-card:hover .description p{
+	opacity: 1;
+	transform: translateY(0px);
+}
+.ui-card:hover .description a{
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+
+
+.form-inputs{
+    position:relative;
+}
+.form-inputs .form-control{
+    height:45px;
+}
+
+.form-inputs .form-control:focus{
+    box-shadow:none;
+    border:1px solid #000;
+}
+
+.form-inputs i{
+    position:absolute;
+    right:10px;
+    top:15px;
+}

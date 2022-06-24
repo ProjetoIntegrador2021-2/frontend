@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #ea4335;
+  background-color: #f7f6ff;
+}
+
+.container{
+  max-width: 55rem;
+}
+
+.alert-danger{
+  background-color: #ea4335;
+}
+
+.local-image {
+  background: url("https://forum.imasters.com.br/uploads/monthly_2017_10/G.png.477e45966ba40171efeaee2611683773.png");
+  width: 100%;
+  right: 100%;
+  background-size: contain;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center;
+}
+
+.btn-login {
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+}
+
+
+.btn-danger {
+  color: white !important;
+  background-color: #ea4335;
+}
+
+.txtbox {
+  color: #a2a2a2;
+}

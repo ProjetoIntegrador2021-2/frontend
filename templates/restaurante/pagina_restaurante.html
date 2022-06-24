@@ -1,0 +1,25 @@
+<h1 style="text-align:center;">{{restaurante.nome_restaurante}}</h1>
+<hr>
+<a href="/restaurante/perfil_restaurante">Acesse seu perfil</a>
+<br><br><br>
+<a href="/restaurante/pagina_restaurante/adicionar_cardapio" style="text-align:right">Adicionar cardápio</a>
+<br><br><br>
+<a href="/restaurante/pedido_solicitado/{{restaurante.id}}">Pedidos a entregar</a>
+<hr>
+<form action="{{url_for('restaurante.excluir_restaurante', id=restaurante.id)}}" method="post">
+    <input type="submit" value="Excluir restaurante">
+</form>
+{% for cardapio in cardapios %}
+    <div>
+        <img src="/restaurante/upload/{{cardapio.id}}/{{cardapio.imagem_prato}}"><br>
+        <h1>{{cardapio.nome_prato}}</h1>
+        <p>Os ingredientes do prato são {{cardapio.ingredientes}}</p><br>
+        <p>Fica pronto em {{cardapio.tempo_preparo}} horas</p>
+        <h2>Valor: {{cardapio.valor}}</h2><br><br>
+        <form action="{{url_for('restaurante.excluircardapio', id=cardapio.id)}}" method="post">
+            <input type="submit" value="Apagar">
+        </form>
+    </div>
+    <hr>
+{% endfor %}
+

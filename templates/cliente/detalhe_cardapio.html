@@ -1,0 +1,12 @@
+
+<h1>{{pega_id.nome_prato}}</h1>
+<br>
+<h2>{{pega_id.ingredientes}}</h2>
+<br>
+<h2 style="font-size:30px">O valor é:{{pega_id.valor}}</h2>
+<br>
+<h2>Restaurante:{{restaurante.nome_restaurante}}</h2><br>
+<h2>Fica pronto em:{{pega_id.tempo_preparo}} horas</h2><br>
+<form action="{{url_for('detalhe', id=pega_id.id)}}" method="post">
+    <input type="hidden" value="{{pega_id.id}}"><button type="submit">Adicionar pedido</button>
+</form>

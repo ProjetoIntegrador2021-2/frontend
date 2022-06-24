@@ -1,0 +1,23 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Teste</title>
+    </head>
+    <body>
+        <h1>Pedidos para o restaurante {{restaurante.nome_restaurante}}!</h1>
+        <hr>
+        <br><br><br>
+        {% for pedido in pedidos %}
+        <hr>
+        <div>
+            <h1>{{pedido.nome_pedido}}</h1>
+            <h3>VALOR DO PEDIDO: R${{pedido.valor_pedido}}</h3>
+            <h3>TAXA: R$2,00</h3>
+            <br>
+            <h2>ENDEREÇO: {{pedido.endereco}}</h2>
+            <h2>CLIENTE: {{pedido.cliente_pediu}}</h2>
+        </div>
+        <hr>
+        {% endfor %}
+    </body>
+</html>

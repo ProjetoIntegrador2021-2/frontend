@@ -1,0 +1,18 @@
+<h1>Edite seu perfil</h1>
+
+<form method='post'>
+    Região:<select name="regiao">
+        {% for regiao in regioes %}
+        <option value="{{entregador.regiao}}">
+            {{regioes[regiao]}}
+        </option>
+        {% endfor %}
+    </select><br>
+    Contato:<input type="text" name="contato" value="{{entregador.contato}}"><br>
+    Cpf:<input type="text" name="cpf" value="{{entregador.cpf}}"><br>
+    Cnh:<input type="text" name="cnh" value="{{entregador.cnh}}"><br>
+    Veículo:<input type="radio" name="veiculo" value="C">Carro
+    <input type="radio" name="veiculo" value="M">Moto
+    <br>
+    <input type="submit" value="Salvar alterações">
+</form>

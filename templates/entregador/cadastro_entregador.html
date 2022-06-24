@@ -1,0 +1,19 @@
+<h1>Cadastre-se, entregador</h1>
+<form method="post">
+    <input type="email" name="email" placeholder="fulano@fulano.com"><br>
+    <label for="regiao">Região</label>
+    <select name="regiao">
+        {% for regiao in regioes %}
+        <option value="{{regiao}}">
+            {{regioes[regiao]}}
+        </option>
+        {% endfor %}
+    </select><br>
+    <input type="text" name="contato" placeholder="contato"><br>
+    <input type="text" name="cpf" placeholder="CPF"><br>
+    <input type="text" name="cnh" placeholder="CNH"><br>
+    <input type="radio" name="veiculo" value="C" checked>Carro
+    <input type="radio" name="veiculo" value="M" checked>Moto
+    <br>
+    <input type="submit" value="Cadastrar">
+</form>

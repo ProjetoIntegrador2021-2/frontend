@@ -1,0 +1,40 @@
+<h1>Seja bem-vindo, {{current_user.nome}}</h1>
+<hr>
+<a href = "/cliente/perfil_cliente">Entre no seu perfil</a>
+<hr>
+{% if restaurante_v == True %}
+    <a href = "/restaurante/pagina_restaurante/{{restaurante.id}}">Acesse página do seu restaurante</a>
+{% endif %}
+<hr>
+{% if entregador_v == True %}
+    <a href = "/entregador/pagina_entregador/{{entregador.id}}">Acesse página do Entregador</a>
+    <hr>
+{% endif %}
+<hr>
+<br><br><br>
+<form action="/cliente/pagina_cliente" method="get">
+    <input type="search" name="q" placeholder="Procura...">
+    <input type="submit" value="Procurar">
+</form>
+<hr>
+    {% for restaurante in restaurantes %}
+        <a href="/cliente/pagina_restaurante/{{restaurante.id}}">
+            <div>
+                <h1>{{restaurante.nome_restaurante}}</h1>
+                <p>Funciona de {{restaurante.funcionamento_inicio}} às {{restaurante.funcionamento_termino}}</p>
+            </div>
+            <hr>
+        </a>
+    {% endfor %}
+    {% for cardapio in cardapios %}
+        <a href="/cliente/detalhe_cardapio/{{cardapio.id}}">
+            <div>
+                <h1>{{cardapio.nome_prato}}</h1>
+                <p>{{cardapio.ingredientes}}</p>
+                <p>Tempo de espera: {{cardapio.tempo_preparo}} horas</p>
+                <h2>Valor: {{cardapio.valor}}</h2>
+
+                <hr>
+            </div>
+        </a>
+    {% endfor %}

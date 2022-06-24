@@ -1,0 +1,6 @@
+<h1>Você está na página de perfil do cliente</h1>
+<hr>
+<a href = "/cliente/perfil_cliente/editar_perfil/{{cliente.id}}">Edite seu perfil</a>
+<form action="{{url_for('cliente.logout_cliente')}}" method="post">
+    <input type="submit" value="Sair">
+</form>

@@ -1,0 +1,23 @@
+<h1>Edite seu perfil</h1>
+
+<form method="post">
+    Nome:<input type="text" name="nome_restaurante" value="{{restaurante.nome_restaurante}}"><br>
+    Endereço:<input type="text" name="endereco" value="{{restaurante.endereco}}"><br>
+    Cidade:<select name="cidade">
+        {% for cidade in cidades %}
+        <option value="{{restaurante.cidade}}">
+            {{cidades[cidade]}}
+        </option>
+        {% endfor %}
+    </select><br>
+    Categoria:<select name="categoria">
+        {% for categoria in categorias %}
+        <option value="{{restaurante.categoria}}">
+            {{categorias[categoria]}}
+        </option>
+        {% endfor %}
+    </select><br>
+    Abre:<input type="time" name="funcionamento_inicio" value="{{restaurante.funcionamento_inicio}}"><br>
+    Fecha:<input type="time" name="funcionamento_termino" value="{{restaurante.funcionamento_termino}}"><br>
+    <input type="submit" value="Salvar alterações">
+</form>

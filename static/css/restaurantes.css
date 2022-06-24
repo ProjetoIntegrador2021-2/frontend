@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+
+.estrela{
+    font-size: 16px;color: #ffbb00}
+
+.btn-danger{
+	background-color: #ea4335;
+}
+
+#bannerimage {
+	width: 100%;
+	background-image: url('https://www.milium.com.br/wp-content/uploads/2020/05/Banner-Blog-Post-Milium-Mai20-07.jpg');
+	height: 9rem;
+	background-color:  #8a8a8a;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:center;
+  }
+
+.form{
+
+    position: relative;
+}
+
+.form .fa-search{
+
+    position: absolute;
+    top:20px;
+    left: 20px;
+    color: #9ca3af;
+
+}
+
+
+
+.left-pan{
+    padding-left: 7px;
+}
+
+.left-pan i{
+
+   padding-left: 10px;
+}
+
+.form-input{
+
+    height: 55px;
+    text-indent: 33px;
+    border-radius: 10px;
+}
+
+.form-input:focus{
+
+    box-shadow: none;
+    border:none;
+}
+.product-image{
+    width: 100%}
+
+
+.spec-1{color: #938787;
+    font-size: 15px}
+
+.para{
+    font-size: 16px}
+
+.restauranteimg    {
+    border-radius: 50%;
+	width: 5rem;
+}
+

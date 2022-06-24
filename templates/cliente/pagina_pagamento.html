@@ -1,0 +1,179 @@
+<!Doctype html>
+<html>
+    <head>
+        <style>
+            #fail-response, #success-response{
+                display:none;
+            }
+        </style>
+    </head>
+    <body>
+       <!-- Step #2 -->
+        <h1>Área de pagamento, {{cliente_pagar.nome}}</h1>
+        <p><b>Você está pedindo:</b> {{session.description}}</p>
+        <form id="form-checkout" method="post">
+           <input type="text" name="cardNumber" id="form-checkout__cardNumber" />
+           <input type="text" name="expirationDate" id="form-checkout__expirationDate" />
+           <input type="text" name="cardholderName" id="form-checkout__cardholderName"/>
+           <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail"/>
+           <input type="text" name="securityCode" id="form-checkout__securityCode" />
+           <select name="issuer" id="form-checkout__issuer">
+               {% for banco_emissor in banco_emissores %}
+                    <option value="{{banco_emissor}}">
+                                {{banco_emissor}}
+                            </option>
+               {% endfor %}
+           </select>
+            <select name="identificationType" id="form-checkout__identificationType">
+                {% for documento in documentos %}
+                    <option value="{{documento}}">
+                        {{documento}}
+                    </option>
+                {% endfor %}
+            </select>
+           <input type="text" name="identificationNumber" id="form-checkout__identificationNumber"/>
+           <select name="installments" id="form-checkout__installments">
+               {% for parcela in parcelas %}
+                <option value="{{parcela}}">
+                    {{parcela}}
+                </option>
+               {% endfor %}
+           </select>
+           <button type="submit" id="form-checkout__submit">Pagar</button>
+           <progress value="0" class="progress-bar">Carregando...</progress>
+        </form>
+        <div id="fail-response">
+        <br/>
+        <img src="img/fail.png" width="350px">
+        <p class="text-center font-weight-bold">Something went wrong</p>
+        <p id="error-message" class="text-center"></p>
+        <br/>
+        </div>
+        <div id="success-response">
+        <br/>
+        <p><b>ID: </b><span id="payment-id"></span></p>
+        <p><b>Status: </b><span id="payment-status"></span></p>
+        <p><b>Produto: </b><span id="payment-detail"></span></p>
+        <br/>
+        </div>
+       <script src="https://sdk.mercadopago.com/js/v2"></script>
+       <script>
+           const mp = new MercadoPago('TEST-397be077-43f9-4f57-9797-42200fd5c302');
+           // Add step #3
+            const cardForm = mp.cardForm({
+          amount: "{{session.pedido}}",
+          autoMount: true,
+          form: {
+            id: "form-checkout",
+            cardholderName: {
+              id: "form-checkout__cardholderName",
+              placeholder: "Titular do cartão",
+            },
+            cardholderEmail: {
+              id: "form-checkout__cardholderEmail",
+              placeholder: "E-mail",
+            },
+            cardNumber: {
+              id: "form-checkout__cardNumber",
+              placeholder: "Número do cartão",
+            },
+            expirationDate: {
+              id: "form-checkout__expirationDate",
+              placeholder: "Data de vencimento (MM/YYYY)",
+            },
+            securityCode: {
+              id: "form-checkout__securityCode",
+              placeholder: "Código de segurança",
+            },
+            installments: {
+              id: "form-checkout__installments",
+              placeholder: "Parcelas",
+            },
+            identificationType: {
+              id: "form-checkout__identificationType",
+              placeholder: "Tipo de documento",
+            },
+            identificationNumber: {
+              id: "form-checkout__identificationNumber",
+              placeholder: "Número do documento",
+            },
+            issuer: {
+              id: "form-checkout__issuer",
+              placeholder: "Banco emissor",
+            },
+          },
+          callbacks: {
+            onFormMounted: error => {
+              if (error) return console.warn("Form Mounted handling error: ", error);
+              console.log("Form mounted");
+            },
+            onSubmit: event => {
+              event.preventDefault();
+
+              const {
+                paymentMethodId: payment_method_id,
+                issuerId: issuer_id,
+                cardholderEmail: email,
+                amount,
+                token,
+                installments,
+                identificationNumber,
+                identificationType,
+              } = cardForm.getCardFormData();
+
+              fetch("{{url_for('cliente.pagina_pagamento', id=cliente_pagar.id)}}", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                  token,
+                  issuer_id,
+                  payment_method_id,
+                  transaction_amount: Number(amount),
+                  installments: Number(installments),
+                  description: "{{session.description}}",
+                  payer: {
+                    email,
+                    identification: {
+                      type: identificationType,
+                      number: identificationNumber,
+                    },
+                  },
+                }),
+              })
+              .then(response => {
+                            return response.json();
+                        })
+                        .then(result => {
+                            if(!result.hasOwnProperty("error_message")) {
+                                document.getElementById("success-response").style.display = "block";
+                                document.getElementById("payment-id").innerText = result.id;
+                                document.getElementById("payment-status").innerText = result.status;
+                                document.getElementById("payment-detail").innerText = result.description;
+                            } else {
+                                document.getElementById("error-message").textContent = result.error_message;
+                                document.getElementById("fail-response").style.display = "block";
+                            }
+
+                            $('.container__payment').fadeOut(500);
+                            setTimeout(() => { $('.container__result').show(500).fadeIn(); }, 500);
+                        });
+              setTimeout(function(){window.location.href = 'https://lukasrib15.pythonanywhere.com/cliente/pagina_cliente/{{current_user.id}}'}, 5000);
+            },
+            onFetching: (resource) => {
+              console.log("Fetching resource: ", resource);
+
+              // Animate progress bar
+              const progressBar = document.querySelector(".progress-bar");
+              progressBar.removeAttribute("value");
+
+              return () => {
+                progressBar.setAttribute("value", "0");
+              };
+            }
+          },
+        });
+       </script>
+    </body>
+</html>
